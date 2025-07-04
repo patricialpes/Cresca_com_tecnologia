@@ -1,0 +1,114 @@
+/* index.css */
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fefbf8;
+  color: #222;
+}
+
+.intro-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 10% 50px 10%;
+  flex-wrap: wrap;
+}
+
+.texto {
+  max-width: 50%;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.azul {
+  color: #9b59b6; 
+}
+.verde {
+  color: #2ecc71; 
+}
+
+.laranja {
+  color: #f39c12; 
+}
+.descricao p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.botao {
+  display: inline-block;
+  background-color: #f1f1f1;
+  color: #222;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+  background-color: #7fb4d4;
+}
+
+.imagem {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.imagem img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsivo para tablets */
+@media (max-width: 768px) {
+  .intro-container {
+    flex-direction: column;
+    padding: 40px 5%;
+    text-align: center;
+  }
+
+  .texto {
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .imagem {
+    justify-content: center;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .botao {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Responsivo para celulares */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .descricao p {
+    font-size: 1rem;
+  }
+
+  .botao {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}

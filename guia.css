@@ -1,0 +1,188 @@
+/* Fonte base */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Cabeçalho */
+header {
+  text-align: center;
+  padding: 40px 20px 20px;
+  background-color: #f1f1f1;
+  color: black;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+/* Container de cada passo */
+.step {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  margin: 20px auto;
+  padding: 32px;
+  max-width: 1100px;
+}
+
+.step-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.imagem-esquerda {
+  width: 120px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.texto {
+  flex: 1;
+}
+
+/* Lista */
+ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+/* Seção de Resultados */
+.beneficios {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  margin: 40px auto;
+  max-width: 1100px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.beneficios h2 {
+  text-align: center;
+  color: black;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.beneficio {
+  margin-bottom: 24px;
+}
+
+.beneficio h3 {
+  font-weight: 600;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.beneficio p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Botão */
+.container-botao {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.botao.voltar {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #f1f1f1;
+  color: black;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.botao.voltar:hover {
+  background-color: #7fb4d4;
+}
+
+/* Rodapé */
+footer {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Responsivo para tablets */
+
+@media (max-width: 1024px) {
+  .step-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .imagem-esquerda {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+
+  .texto {
+    flex: unset;
+    width: 100%;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+}
+
+/* Responsivo para celulares */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  header p {
+    font-size: 0.95rem;
+  }
+
+  .step {
+    padding: 24px 16px;
+  }
+
+  .beneficios {
+    padding: 24px 16px;
+  }
+
+  .beneficios h2 {
+    font-size: 20px;
+  }
+
+  .beneficio h3 {
+    font-size: 16px;
+  }
+
+  .beneficio p {
+    font-size: 15px;
+  }
+
+  .botao.voltar {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
